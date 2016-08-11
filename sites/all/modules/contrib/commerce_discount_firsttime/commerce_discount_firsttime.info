@@ -1,0 +1,14 @@
+name = Commerce Discount First Time Customer
+description = Adds a condition to commerce discount for first time users
+core = 7.x
+package = Commerce
+
+dependencies[] = commerce_discount
+dependencies[] = rules
+
+; Information added by Drupal.org packaging script on 2016-03-03
+version = "7.x-1.0"
+core = "7.x"
+project = "commerce_discount_firsttime"
+datestamp = "1457014488"
+

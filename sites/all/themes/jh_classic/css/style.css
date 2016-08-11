@@ -1,0 +1,288 @@
+/* 
+
+COLORS 
+	Dark Grey:				#555
+	Med Grey:					#999
+	Lt Grey						#eaeaea
+	
+	
+	
+FONTS
+	font-family: 'MuseoSlab500';	
+
+STANDARDS
+	text btn: 		font-size: 10px; text-transform: uppercase; font-weight: bold;		
+
+	
+*/
+
+/* MAIN STYLES
+-------------------------------------------------------------- */
+body{background: #fff; font-family: 'MuseoSlab500', Times, serif; color: #555;}
+
+
+a{color: #999; text-decoration: none;}
+a:hover{color: #555;}
+.image a{line-height: 0; display: block;}
+
+p{font-size: 14px; line-height: 20px; font-weight: normal;}
+
+#container{width: 760px; margin: 0 auto;z-index: 1; }  
+
+
+.panel-separator{height: 30px;}
+
+ul, li, .item-list ul, .item-list ul li{margin: 0; padding: 0;}
+
+
+h1, h2, h3, h4{font-weight: normal;}
+h1{background: #555; font-size: 24px; padding: 5px 10px; color: #eaeaea; font-weight: normal; text-transform: uppercase; float: left;}
+
+
+div.status, table tr.ok{background-color: #bed1a8; border: none;}
+div.status a, table tr.ok a{color: #fff;}
+
+div.error, table tr.error{background-color: #d9acac; border: none;}
+
+
+/* HEADER
+-------------------------------------------------------------- */
+#header-top{padding: 5px; 10px; background: #555; color: #999;}
+
+#header-main{padding-bottom: 30px;}
+
+#logo{font-size: 36px; text-transform: uppercase; text-align: center; padding: 30px 0;}
+#logo a{color: #555;}
+#logo a:hover{color: #999;}
+
+#title-main{background: #eaeaea; margin-bottom: 20px;}
+
+
+.region-header-top{float: right; z-index: 1000;}
+.cart-block-small{color: #fff;  text-align: right;}
+.cart-block-small a{/* color: #eaeaea; */}
+.cart-block-small a:hover{color: #eaeaea;}
+
+#admin-menu{color: #fff; z-index: 1;}
+#admin-menu a:hover{color: #eaeaea;}
+
+
+/* FOOTER
+-------------------------------------------------------------- */
+#footer{width: 760px; margin: 50px auto 0; z-index: 1;}
+#footer ul li.expanded,
+#footer ul li.leaf{list-style: none; margin: 0; padding: 0; padding-bottom: 5px}
+
+#footer-left,
+#footer-middle,
+#footer-right{float: left;}
+#footer-left{}
+#footer-left .block{float: left; margin-right: 40px;}
+#footer-left a{font-size: 10px; text-transform: uppercase;}
+#footer-left .menu-mlid-1046 > a,
+#footer-left .menu-mlid-1268 > a,
+#footer-left #block-menu-menu-footer-extras a{font-size: 12px; color: #555;}
+
+#block-simplenews-4 h2{font-size: 12px; color: #555; text-transform: uppercase;}
+#block-simplenews-4 .form-item-mail{margin: 0;}
+#block-simplenews-4 .form-item-mail label .form-required{display: none;}
+#block-simplenews-4 input.form-text{width: 200px;}
+#block-simplenews-4 input.form-submit{position: absolute; right: 0;}
+
+#footer-bottom{background: #555; text-align: center; padding: 5px; font-size: 10px; color: #fff; text-transform: uppercase; clear: both; margin-top: 20px;}
+
+.share-twitter, .share-pin, .share-insta{text-align: center; width: 50px;  float: left; }
+.share-pin a, .share-twitter a, .share-insta a{width: 80px; height: 40px; display: block; font-size: 12px; color: #555; padding-top: 45px;}
+
+.share-twitter a{background: url(../images/JH_twitter.jpg) center 0 no-repeat;}
+.share-pin a{background: url(../images/JH_pin.jpg) center 0 no-repeat;}
+.share-insta a{background: url(../images/JH_insta.jpg) center 0 no-repeat;}
+
+
+#footer-right{width: 200px;}
+
+
+/* MAIN CONTENT
+-------------------------------------------------------------- */
+#main-content{clear: both;}
+
+#intro-vid-title{float: left; width: 200px; margin-right: 20px;}
+#intro-vid-player{float: left; width: 540px;}
+
+
+/* STORES
+-------------------------------------------------------------- */
+.page-stores h3{margin-bottom: 10px; font-size: 18px; text-transform: uppercase;}
+
+.teaser-store{margin-bottom: 30px; font-size: 14px;}
+.teaser-store .web a, .teaser-store .web h2{background: #555; padding: 5px 10px;  margin-right: 10px; color: #eaeaea; display: inline; font-weight: normal; font-size: 16px; text-transform: uppercase;}
+.teaser-store .web a:hover{background: #999; color: #fff;}
+
+.sep{color:  #999;}
+
+
+/* POST
+-------------------------------------------------------------- */
+.teaser-post{margin-bottom: 40px;}
+.teaser-post .main{background: #eaeaea; padding: 10px;}
+.teaser-post .date{color: #999; margin: 10px 0;}
+.teaser-post .image{float: right; margin-left: 20px;}
+.teaser-post .article-link a{background: #555; padding: 5px 10px;  margin-right: 20px; color: #eaeaea; display: inline-block; text-transform: uppercase;}
+.teaser-post .article-link a:hover{background: #999; color: #fff;}
+
+
+/* PAGE
+-------------------------------------------------------------- */
+.field-name-field-page-header-image{margin-bottom: 20px;}
+
+.page-node-22 h2{margin-bottom: 10px}
+.contact-column{float: left; margin-right: 50px;}
+
+
+/* JOB OFFER
+-------------------------------------------------------------- */
+.job-teaser{margin-bottom: 30px; font-size: 14px;}
+.job-teaser h2 span{background: #555; padding: 5px 10px;  margin-right: 10px; color: #eaeaea; display: inline; font-weight: normal; font-size: 16px; text-transform: uppercase;}
+.job-teaser h2:hover span{background: #999; color: #fff;}
+.job-teaser h2 {font-size: 14px; cursor: pointer; margin-bottom: 10px;}
+.job-teaser .body{margin-left: 40px; display: none;}
+.job-teaser .field-label{margin-top: 10px;}
+.job-teaser li{list-style: disc; margin-left: 20px;}
+
+/* FORM
+-------------------------------------------------------------- */
+input.form-text{background: #eaeaea; border: none; padding: 3px 0; font-family: 'MuseoSlab500', Times, serif; color: #555;}
+label{font-weight: normal; font-size: 10px; color: #999; text-transform: uppercase;}
+
+input.form-submit{background: #555; color: #fff; border: none; font-family: 'MuseoSlab500', Times, serif; padding: 5px 10px; text-transform: uppercase;}
+input.form-submit:hover{background: #999; color: #fff;}
+
+
+
+/* INTRO 
+-------------------------------------------------------------- */
+.intro-gallery{}
+.intro-gallery .images{width: 760px; height: 400px;}
+.intro-gallery li{margin: 0 !important; padding: 0; position: absolute; top: 0; left: 0; display: none; cursor: pointer; }
+.intro-gallery li.first{display: block;}
+
+.c-link{float: left; z-index: 100;}
+
+.gallery-nav{text-align: right; z-index: 1;}
+.gallery-nav a{font-size: 25px; margin-left: 20px; opacity: .5;}
+.gallery-nav a.item-0{opacity: 1;}
+
+
+.field-name-field-intro-video-side-image{float: left; width: 210px; margin-right: 10px;}
+.field-name-field-intro-video-url{float: left; width: 540px;}
+
+
+/* COLLECTION GALLERY
+-------------------------------------------------------------- */
+.c-gallery{}
+
+.c-gallery .images{width: 760px; height: 500px;}
+.c-gallery .images li{position: absolute; top: 0; left: 0; display: none; margin: 0 !important; cursor: pointer; line-height: 0;}
+.c-gallery .images li.first{display: block;}
+
+
+.c-gallery .thumbs{margin-top: 20px;}
+.c-gallery .thumbs li{float: left; margin-right: 5px; margin-left: 0 !important; margin-bottom: 5px !important; line-height: 0; cursor: pointer;}
+.c-gallery .thumbs li.first{opacity: .5;}
+
+.c-gallery h2,
+.c-gallery .links{display: none !important;}
+.c-gallery .field-name-field-image-product-reference{position: absolute; left: 0; bottom: 5px;}
+/* .c-gallery .field-name-field-image-product-reference a{display: inline-block; background: #555; color: #fff; ; margin-top: 5px; line-height: normal; font-size: 10px; font-weight: normal; padding-left: 10px;} */
+.c-gallery .field-name-field-image-product-reference .views-row{display: inline-block; background: #555; color: #fff; ; margin-top: 5px; line-height: normal; font-size: 10px; font-weight: normal; padding-left: 10px;padding: 5px 10px; cursor: default}
+.c-gallery .field-name-field-image-product-reference a span{background: #fff; color: #555; display: inline-block; padding: 5px 10px; margin-left: 10px; text-transform: uppercase;}
+.c-gallery .field-name-field-image-product-reference a span:hover{background: #999;}
+
+
+#c-nav-next,
+#c-nav-last{width: 30px; height: 50px; background: url(../images/JH_c_controls.jpg) no-repeat; opacity: .5; position: absolute; top: 205px; cursor: pointer; display: block;}
+#c-nav-last{left: -50px;}
+#c-nav-next{background-position: -35px 0; right: -50px;}
+#c-nav-next:hover,
+#c-nav-last:hover{opacity: 1;}
+
+#line-sheet{text-align: right; text-transform: uppercase; line-height: 40px; padding-right: 10px;}
+#line-sheet-form{text-align: right; margin-bottom: 20px; display: none;}
+
+.view-collections td{padding:0 5px 0 0;}
+
+#protected-node-enterpassword .form-text{background: #fff;}
+
+
+.c-gallery .product-thumb{position: absolute; left: -72px; bottom: 0; display: none;}
+.c-gallery .product-ref:hover .product-thumb{display: block;}
+
+
+/* PRODUCT DISPLAY
+-------------------------------------------------------------- */
+.product-full {}
+.product-full .images{float: left; width: 260px; margin-right: 30px;}
+.product-full .image-main{width: 250px; height: 380px; margin-bottom: 5px;}
+.product-full .image-main li{display: none; position: absolute; top: 0; left: 0;}
+.product-full .image-other li{float: left; margin-right: 5px; cursor: pointer;}
+.product-full .body{float: left; width: 470px;}
+.product-full .service-links{float: left; padding-top: 20px;}
+.product-full .sku{color: #999;}
+.product-full .price{font-size: 18px; color: #999; margin: 10px 0;}
+.product-full h2{font-size: 24px;}
+
+.product-full .info .item-list ul li{padding: 0; margin: 0 0 3px;}
+.product-full .info .item-list ul li .field-item li{list-style: disc inside;}
+.field-name-field-product-info-title{background: #eaeaea; padding: 5px 10px; color: #999; cursor: pointer; text-transform: uppercase;}
+.field-name-field-product-info-details{padding: 5px 10px; display: none;}
+
+.add-to-cart{padding-top: 20px; text-align: right; float: right;}
+.add-to-cart .form-item, 
+.add-to-cart .form-actions{float: left; margin-left: 10px; margin-top: 0; text-align: left;}
+
+.view-product-display td{width: 186px; padding: 0 4px 0 0; vertical-align: top;}
+.view-product-display .desc{font-size: 12px;}
+
+.other-products{clear: both; padding-top: 50px;}
+.other-products li h2{display: none;}
+.other-products ul li{float: left; }
+.other-products .field-content ul li{margin-right: 5px;}
+
+#edit-attributes-field-product-size {text-transform: uppercase;}
+
+.attribute-widgets{display: inline-block;}
+.commerce-add-to-cart #edit-submit{ margin: 8px 0 0 10px; display: inline-block; }
+
+.view-product-display td{padding-bottom: 20px;}
+.view-product-display td h2{font-size: 14px;}
+
+.attribute-widgets option{text-transform: uppercase !important;}
+.attribute-widgets select{text-transform: uppercase !important;}
+
+/* TABLE
+-------------------------------------------------------------- */
+table{width: 100%;}
+td{padding: 5px; vertical-align: middle;}
+tr.even, tr.odd{background: #f9f9f9;}
+tr.even{background: #fefefe;}
+
+/*  CART / CHECKOUT */
+.line-item-total{padding: 10px 0; font-size: 24px; font-weight: normal;}
+.line-item-summary .line-item-total-label{font-weight: normal; color: #999;}
+.views-field-line-item-title{font-size: 16px;}
+.commerce-line-item-actions input{margin-left: 5px;}
+table .form-type-textfield input{/* background: #fff; */ padding: 5px;}
+
+fieldset{background: #eaeaea; padding: 10px; margin-top: 20px;}
+fieldset legend{background: #fff; padding: 5px 10px; font-size: 18px;}
+fieldset input[type="text"]{background: #fff;}
+
+#edit-cart-contents{}
+#edit-continue{margin-right: 5px;}
+
+
+
+/* TOOLS
+-------------------------------------------------------------- */
+.text-center{text-align: center;}
+.float-right{float: right;}

@@ -1,0 +1,40 @@
+
+/* 
+
+COLORS 
+	Dark Grey:				#555
+	Med Grey:					#999
+	Lt Grey						#eaeaea
+	
+	
+	
+FONTS
+	font-family: 'MuseoSlab500';	
+
+STANDARDS
+	text btn: 		font-size: 10px; text-transform: uppercase; font-weight: bold;		
+
+	
+*/
+
+
+
+
+#nice-menu-1{}
+
+ul.nice-menu li{float: left; margin-right: 89px;}
+/* ul.nice-menu li.menu-1268{float: right; margin: 0 0 0 30px;} */
+ul.nice-menu li a{color: #999; font-size: 12px; text-transform: uppercase; }
+ul.nice-menu li.last{margin-right: 0;}
+
+ul.nice-menu li a.active,
+ul.nice-menu li a:hover{color: #555;}
+
+
+ul.nice-menu ul li{float: none; width: 150px;}
+ul.nice-menu ul li a{background: #555; color: #eaeaea; padding: 5px;}
+ul.nice-menu ul li a.active{background: #999;}
+ul.nice-menu ul li a:hover{background: #999; color: #fff;}
+
+
+ul.nice-menu .last ul{right: -30px; text-align: right;}
