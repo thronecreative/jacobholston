@@ -371,12 +371,12 @@ li a.active, li.opened span.nolink {
 #main-container {
   min-height: 100vh; }
 /* line 104, ../sass/style.scss */
-#main-container .main {
+#main-container > .main {
   min-height: 100vh;
   padding-top: 140px; }
 @media (max-width: 700px) {
   /* line 104, ../sass/style.scss */
-  #main-container .main {
+  #main-container > .main {
     padding-top: 60px; } }
 
 /* line 116, ../sass/style.scss */
