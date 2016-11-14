@@ -86,7 +86,7 @@ li.opened span.nolink{color: $color_main;}
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 800;
   width: 100%;
   color: #fff;
   
@@ -106,7 +106,7 @@ li.opened span.nolink{color: $color_main;}
     padding-top: 140px;
 
     @include bp(s){
-      padding-top: 60px;
+      padding-top: 40px;
     }
   }
 }

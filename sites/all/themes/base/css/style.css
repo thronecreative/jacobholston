@@ -359,7 +359,7 @@ li a.active, li.opened span.nolink {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 800;
   width: 100%;
   color: #fff; }
 @media (max-width: 700px) {
@@ -377,7 +377,7 @@ li a.active, li.opened span.nolink {
 @media (max-width: 700px) {
   /* line 104, ../sass/style.scss */
   #main-container > .main {
-    padding-top: 60px; } }
+    padding-top: 40px; } }
 
 /* line 116, ../sass/style.scss */
 #header {
