@@ -1,6 +1,6 @@
 <div class="gallery full is-not-thumb">
 
-	<div class="images">
-		<?php echo $images; ?>
+	<div class="intro-images">
+		<?php echo $intro_images; ?>
 	</div>
 </div> 

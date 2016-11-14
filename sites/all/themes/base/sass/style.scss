@@ -230,6 +230,7 @@ li.opened span.nolink{color: $color_main;}
 .insta-footer{
   padding: 100px 0 150px;
   position: relative;
+  z-index: 200;
 
   h3{
     padding: 5px 10px;
@@ -511,7 +512,7 @@ li.opened span.nolink{color: $color_main;}
   line-height: 90px;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 300;
   background-color: #fff;
 
   @include bp(s){
@@ -1365,7 +1366,42 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
 
 /* FRONT
 -------------------------------------------------------------- */
+
+.intro-images{
+  position: relative;
+  z-index: 1;
+
+  .field-item{
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+
+    img{
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  &.portrait{
+    .field-item{
+      img{
+        max-width: none;
+        height: 100vh;
+        width: auto;
+      }
+    }
+  }
+
+  [data-index="0"]{
+    display: block;
+  }
+}
+
+
 .page-node.node-type-intro-gallery{
+
 
   // #header-container{
   //   top: 65vh;
@@ -1412,6 +1448,7 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 100;
   padding: 130px 40px;
   display: -webkit-box;
   display: -moz-box;
@@ -1441,6 +1478,7 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
   position: absolute;
   right: 0;
   bottom: 200px;
+  z-index: 100;
 
   a{
     transition: all .3 ease;

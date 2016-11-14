@@ -2,47 +2,82 @@ Drupal.behaviors.intro_gallery = {
 	attach: function (context, settings) {
 		(function ($) {
  			
- 			var images = Drupal.settings.intro_images;
- 			var controls = $('#bg-images .controls span');
- 			var bs = $.backstretch(images, {duration: 3000, fade: 1000});
- 			var i = 0;
+ 			var 	$win = $(window),
+ 					win_w = $win.width(),
+ 					win_h = $win.height(),
+ 					$intro_images_holder = $('.intro-images'),
+ 					$intro_images = $('.intro-images .field-item')
 
- 			
+ 					total_items = $intro_images.length,
+ 					current_item = 0,
+					last_item = 0,
+					trans_speed = 800,
+					slide_show = setInterval(nextItem, 4000);;
 
- 			$(window).on("backstretch.before", function (e, instance, index) {
-			  i = index;
-			  fadeControls();
-			});
 
-			
+ 			$win.resize(function(event) {
+ 				win_w = $win.width();
+				win_h = $win.height();
 
-			controls.click(function(){
-				i = $(this).data('index');
-				bs.pause();
-				bs.show(i);
-				fadeControls();
-			});
+ 				resizeImages();
+ 			});
 
-			function fadeControls(){
-				controls.removeClass('active');
-				$('.controls span[data-index=' + i + ']').addClass('active');
+ 			function resizeImages(){
+ 				
+ 				if(win_w > win_h){
+
+ 					$intro_images_holder.removeClass('portrait');
+ 				}else{
+
+ 					$intro_images_holder.addClass('portrait');
+ 				}
+ 			}
+
+ 			$intro_images.each(function(index, el) {
+ 				//console.log(this)
+ 				var $this = $(this);
+
+ 				$this.attr('data-index', index);
+ 			});
+
+ 			function nextItem(){
+				last_item = current_item;
+				current_item++;
+				if(current_item == total_items){
+					current_item = 0;
+				}
+				fadeItems();
 			}
 
-			fadeControls();
+			
+			function lastItem(){
+				last_item = current_item;
+				current_item--;
+				if(current_item == -1){
+					current_item = total_items - 1;
+				}
+				fadeItems();
+			}
 
-			jQuery(document).keydown(function(e) {
+			function fadeItems(){
+				$('[data-index=' + current_item + ']').fadeIn(trans_speed);
+				$('[data-index=' + last_item + ']').fadeOut(trans_speed);		
+			}
+
+
+			$(document).keydown(function(e) {
 			    switch(e.which) {
 			        case 37: // left
-			        bs.pause();
-			        bs.prev();
+			        clearInterval(slide_show);
+			        lastItem()
 			        break;
 
 			        case 38: // up
 			        break;
 
 			        case 39: // right
-				        bs.pause();
-				        bs.next();
+			        	clearInterval(slide_show);
+				       nextItem()
 			        break;
 
 			        case 40: // down
@@ -54,7 +89,7 @@ Drupal.behaviors.intro_gallery = {
 			    e.preventDefault(); // prevent the default action (scroll / move caret)
 			});
 
-
+			resizeImages();
 		}(jQuery));
 	}	
 }
