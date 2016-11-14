@@ -293,7 +293,7 @@ table {
 /* line 18, ../sass/style.scss */
 body {
   font: 16px/1.5 "Lato", sans-serif;
-  background-color: #f6f6f6;
+  background-color: #ccc;
   color: #000; }
 
 /* line 24, ../sass/style.scss */
@@ -706,7 +706,7 @@ li a.active, li.opened span.nolink {
   right: 0;
   z-index: 900;
   background-color: #000;
-  color: #f6f6f6;
+  color: #ccc;
   padding: 5px;
   font-size: 30px;
   line-height: 40px;
@@ -1587,7 +1587,7 @@ div.error, table tr.error {
   transition: all 0.3s;
   cursor: pointer;
   position: relative;
-  background-color: #dddddd;
+  background-color: #b3b3b3;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -1610,7 +1610,7 @@ div.error, table tr.error {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  background-color: #e9e9e9;
+  background-color: #bfbfbf;
   height: 40px;
   text-align: center;
   line-height: 35px;
