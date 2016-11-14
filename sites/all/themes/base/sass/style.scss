@@ -240,6 +240,10 @@ li.opened span.nolink{color: $color_main;}
     letter-spacing: 2px;
     font-size: 12px;
   }
+
+  @include bp(m){
+   padding: 0;
+  }
 }
 
 #footer-instafeed{
@@ -1378,19 +1382,49 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
     left: 0;
     z-index: 0;
 
-    img{
-      width: 100vw;
+    @include bp(m){
+      position: relative;
+      top: 0;
+      width: 100%;
+      top: auto;
+      left: auto;
+      display: block;
+    }
+
+    // img{
+    //   width: 100vw;
+    //   height: auto;
+    // }
+  }
+
+  // &.portrait{
+  //   .field-item{
+  //     img{
+  //       max-width: none;
+  //       height: 100vh;
+  //       width: auto;
+  //     }
+  //   }
+  // }
+  
+  .img-landscape{
+    width: 100vw;
+    height: auto;
+
+    @include bp(m){
+      width: 100%;
       height: auto;
     }
   }
 
-  &.portrait{
-    .field-item{
-      img{
-        max-width: none;
-        height: 100vh;
-        width: auto;
-      }
+  .img-portrait{
+    max-width: none;
+    width: auto;
+    height: 100vh;
+
+    @include bp(m){
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -1500,6 +1534,7 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
     left: 0;
     text-align: center;
     width: 100%;
+    display: none;
 
     a{
       padding: 10px;

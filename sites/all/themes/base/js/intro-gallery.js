@@ -31,12 +31,24 @@ Drupal.behaviors.intro_gallery = {
 
  					$intro_images_holder.addClass('portrait');
  				}
+
+ 				if(win_w < 900){
+ 					clearInterval(slide_show);
+ 				}
  			}
 
  			$intro_images.each(function(index, el) {
  				//console.log(this)
- 				var $this = $(this);
+ 				var 	$this = $(this),
+ 						$img = $('img', this),
+ 						img_w = $img.attr('width'),
+ 						img_h = $img.attr('height');
 
+ 				if(img_w < img_h){
+ 					$img.addClass('img-portrait')
+ 				}else{
+ 					$img.addClass('img-landscape')
+ 				}
  				$this.attr('data-index', index);
  			});
 
@@ -60,8 +72,10 @@ Drupal.behaviors.intro_gallery = {
 			}
 
 			function fadeItems(){
-				$('[data-index=' + current_item + ']').fadeIn(trans_speed);
-				$('[data-index=' + last_item + ']').fadeOut(trans_speed);		
+				if(win_w > 900){
+					$('[data-index=' + current_item + ']').fadeIn(trans_speed);
+					$('[data-index=' + last_item + ']').fadeOut(trans_speed);	
+				}	
 			}
 
 
