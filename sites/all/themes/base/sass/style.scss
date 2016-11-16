@@ -968,6 +968,7 @@ li.opened span.nolink{color: $color_main;}
 }
 
 .image-other{
+  max-width: 400px;
    @include bp(s){
     display: none;
   }
@@ -991,6 +992,21 @@ li.opened span.nolink{color: $color_main;}
 .product-full .service-links{float: left; padding-top: 20px;}
 .product-full .sku{color: #999;}
 .product-full .price{font-size: 18px; color: #999; margin: 10px 0;}
+
+.commerce-price-savings-formatter-prices-inline tr td{
+  text-align: left;
+  padding: 0;
+
+}
+
+.commerce-price-savings-formatter-list .price-amount{
+  color: #999;
+}
+
+.commerce-price-savings-formatter-prices-down .commerce-price-savings-formatter-price .price-amount{
+  color: #666;
+}
+
 .product-full h2{font-size: 24px;}
 
 .product-full .info .item-list ul li{padding: 0; margin: 0 0 3px;}
@@ -1381,6 +1397,8 @@ div.error, table tr.error{background-color: #d9acac; border: none;}
     top: 50px;
     left: 0;
     z-index: 0;
+    width: 100%;
+    text-align: center;
 
     @include bp(m){
       position: relative;

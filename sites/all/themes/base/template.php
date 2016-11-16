@@ -65,6 +65,12 @@ function base_preprocess_node(&$vars){
 	}
 
 	// IMAGE GALLERY ====================================================
+	if($vars['type'] == 'product'){
+		kpr($vars);
+		$vars['images'] = render($vars['content']['field_product_images']);
+		$vars['price'] = render($vars['content']['product:commerce_price']);
+	}
+	// IMAGE GALLERY ====================================================
 	if($vars['type'] == 'intro_gallery'){
 
 
